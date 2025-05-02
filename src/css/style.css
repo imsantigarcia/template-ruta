@@ -1,0 +1,199 @@
+/* ===================
+   Ajustes generales
+=================== */
+
+main {
+    margin-top: 2rem;
+}
+
+/* Tipografía */
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Modelo de caja alternativo */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Highlight */
+
+.highlight {
+    background-image: linear-gradient(to top, #9b9b9b8c 50%, transparent 50%);
+    background-size: 100% 0.6em;
+    background-repeat: no-repeat;
+    background-position: 0 90%;
+  }
+
+/* ===================
+   Above the folder
+=================== */
+
+/* Sección flexible */
+
+.seccion-flexible {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 3rem 0rem 12rem 0rem;
+    background-image: linear-gradient(#ffffff,#ffefd6);
+}
+
+/* Contenedor de los badgets */
+
+.container-badgets {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Badget: icono y texto */
+
+.badget {
+    display: flex;
+    flex: row;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 300;
+}
+
+/* Imagen del badget */
+
+.badget-icon {
+    border-radius: 50%;
+}
+
+/* H1 */ 
+
+h1 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+/* Subtítulo */
+
+.subtitulo {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* Container de los botones */
+
+.container-botones {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+/* Ambos botones */
+
+.boton-principal, .boton-secundario {
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    padding: 0.7rem 1.2rem;
+    transition: 1s;
+}
+
+/* Botón principal */
+
+.boton-principal {
+    background-color: #ffa826;
+}
+
+/* Botón secundario */
+
+.boton-secundario {
+    border: 1px solid #ffa826;
+}
+
+/* ===================
+   El pueblo abandonado por excelencia
+=================== */
+
+.seccion-informativa {
+    position: relative;
+    top: -4rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%;
+  }
+
+.h2-informativa {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.img-informativa {
+    border-radius: 1rem;
+}
+
+.p-informativa {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 300;
+    width: 90%;
+}
+
+/* ===================
+   Above the folder: mobile
+=================== */
+
+@media (max-width: 400px) {
+
+    .seccion-flexible {
+        text-align: left;
+        padding: 3rem 1.5rem 10rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .subtitulo {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .seccion-informativa {
+        padding: 2rem 1.5rem;
+    }
+
+    .img-informativa {
+        width: 100%;
+    }
+
+    .p-informativa {
+        width: 100%;
+        text-align: left;
+        font-size: 1.3rem;
+    }
+
+    .h2-informativa {
+        text-align: left;
+    }
+
+    .container-botones {
+        justify-content: left;
+    }
+
+    .container-badgets {
+        justify-content: left;
+    }
+}
